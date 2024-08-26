@@ -1,0 +1,64 @@
+.contenedor button{
+
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    display: grid;
+
+}
+.btn1 {
+
+    background-color: blue;
+    display: grid;
+    grid-column: 16; 
+
+    grid-row: 10; 
+    }  /* CPU Socket */
+    
+.btn2 {
+    background-color: yellow;
+    grid-column: 14;
+    grid-row: 16; 
+}  /* RAM Slots */
+.btn3 { 
+    background-color: slateblue;
+    grid-column: 11; 
+    grid-row: 12; 
+}  /* Northbridge */
+.btn4 { 
+    background-color: blueviolet;
+    grid-column: 4; 
+    grid-row: 16; 
+}  /* Southbridge */
+.btn5 { 
+    background-color: aqua;
+    grid-column: 17; 
+    grid-row: 5; 
+}  /* Power Connector */
+.btn6 { 
+    background-color: lime;
+    grid-column: 2; 
+    grid-row: 15; 
+}  /* CMOS Battery */
+.btn7 { 
+    background-color: darkblue;
+    grid-column: 4; 
+    grid-row: 8; 
+}  /* Expansion Slots */
+.btn8 { 
+    background-color: darkmagenta;
+    grid-column: 11; 
+    grid-row: 19; 
+}  /* SATA Connectors */
+.btn9 { 
+    background-color: deeppink;
+    grid-column: 9; 
+    grid-row: 2; 
+}  /* Rear I/O Ports */
+.btn10{
+    background-color: brown;
+    grid-row: 7;
+    grid-column: 10;
+
+}  /* discipador */

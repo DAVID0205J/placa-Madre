@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMap</title>
+    <link rel="stylesheet" href="./css/background.css">
+</head>
+<body>
+    <header>
+        <h1>TechMap</h1>
+        <nav>
+            <ul>
+                <li><a href="#">PC</a></li>
+                <li><a href="#">GPU</a></li>
+                <li><a href="#">CPU</a></li>
+                <li><a href="#">Fuentes de Poder</a></li>
+                <li><a href="#">Placa Madre</a></li>
+            </ul>
+        </nav>
+        <a href="https://github.com/DAVID0205J/placa-Madre" target="_blank" class="github-btn">GitHub</a>
+    </header>
+    
+    <main class="grid-container">
+        <div class="grid_img">
+            <section id="component-view">
+                <div class="grid">
+                    <img src="https://files.oaiusercontent.com/file-rxRIuSuCJGtCljYYoQo1hWCu?se=2024-08-26T00%3A47%3A33Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Da99eb46a-c7eb-4e0d-8c99-1dbfdca92688.webp&sig=V%2BrnkHzyvL0eriKxbgBpuPC92i6TfO2cYcKAOZ5r8rE%3D" alt="Componente" id="component-image">
+                    
+                    <button class="grid-button" data-component="cpu" id="cpu-button">CPU</button>
+                    <button class="grid-button" data-component="ram" id="ram-button">RAM</button>
+                    <button class="grid-button" data-component="disipador" id="disipador-button">Disipador</button>
+                    <button class="grid-button" data-component="puertos" id="puertos-button">Puertos</button>
+                    <button class="grid-button" data-component="chipset" id="chipset-button">Chipset</button>
+                    <button class="grid-button" data-component="conectores" id="conectores-button">Conectores</button>
+                    <button class="grid-button" data-component="bios" id="bios-button">BIOS</button>
+                    <button class="grid-button" data-component="transistores" id="transistores-button">Transistores</button>
+                    <button class="grid-button" data-component="condensadores" id="condensadores-button">Condensadores</button>
+                </div>
+            </section>
+        </div>
+        <div id="component-info">
+            <div id="gpu-info" class="component-info hidden">
+                <h2>Información sobre GPU</h2>
+                <p>La GPU (Unidad de Procesamiento Gráfico) es crucial para la renderización de gráficos en computadoras y videojuegos.</p>
+            </div>
+            <div id="cpu-info" class="component-info hidden">
+                <h2>Información sobre CPU</h2>
+                <p>La CPU (Unidad Central de Procesamiento) es el cerebro de la computadora, encargado de ejecutar instrucciones y procesar datos.</p>
+            </div>
+            <div id="ram-info" class="component-info hidden">
+                <h2>Información sobre RAM</h2>
+                <p>La RAM (Memoria de Acceso Aleatorio) es la memoria principal que almacena datos y programas que están en uso.</p>
+            </div>
+            <div id="disipador-info" class="component-info hidden">
+                <h2>Información sobre Disipador</h2>
+                <p>El disipador se encarga de enfriar los componentes para evitar el sobrecalentamiento y asegurar su buen funcionamiento.</p>
+            </div>
+            <div id="puertos-info" class="component-info hidden">
+                <h2>Información sobre Puertos</h2>
+                <p>Los puertos en una placa madre permiten conectar periféricos y otros dispositivos a la computadora.</p>
+            </div>
+            <div id="chipset-info" class="component-info hidden">
+                <h2>Información sobre Chipset</h2>
+                <p>El chipset controla la comunicación entre el procesador, la memoria y otros periféricos de la placa madre.</p>
+            </div>
+            <div id="conectores-info" class="component-info hidden">
+                <h2>Información sobre Conectores</h2>
+                <p>Los conectores son puntos de enlace para cables y dispositivos en la placa madre.</p>
+            </div>
+            <div id="bios-info" class="component-info hidden">
+                <h2>Información sobre BIOS</h2>
+                <p>El BIOS es el sistema básico de entrada y salida que inicia la computadora y gestiona el hardware.</p>
+            </div>
+            <div id="transistores-info" class="component-info hidden">
+                <h2>Información sobre Transistores</h2>
+                <p>Los transistores actúan como interruptores o amplificadores en la placa madre, permitiendo el control de la electricidad.</p>
+            </div>
+            <div id="condensadores-info" class="component-info hidden">
+                <h2>Información sobre Condensadores</h2>
+                <p>Los condensadores almacenan y liberan energía eléctrica, estabilizando el voltaje en la placa madre.</p>
+            </div>
+    </main>
+
+
+
+    <script src="./js/btn.js" type="module"></script>
+</body>
+</html>

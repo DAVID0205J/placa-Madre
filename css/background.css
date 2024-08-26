@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.github-btn {
+    background-color: #6e5494;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+#component-image {
+    width: 100%;
+}
+
+.grid img{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 26;
+    grid-row-start: 1;
+    grid-row-end: 20;
+}
+
+#filter-menu {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(25 , 1fr);
+    grid-template-rows: repeat(25 , 1fr);
+}
+
+#component-info {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+#download-btn {
+    background-color: #4428a7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#download-btn:hover {
+    background-color: #218838;
+}
+
+.component-info {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-width: 300px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.grid-container button{
+    background-color: #33333301;
+    color: rgba(240, 248, 255, 0);
+    border: none;
+}
+
+#ram-button {
+    text-align: center;
+    align-content: center;
+
+    display: grid;
+    grid-row-start: 3;
+    grid-row-end: 11;
+    grid-column-start: 20;
+    grid-column-end: 20;
+}
+#cpu-button{
+    text-align: center;
+    padding-left: 4rem;
+    align-content: center;
+
+    display: grid;
+    grid-row-start: 5;
+    grid-row-end: 10;
+    grid-column-start: 8;
+    grid-column-end: 16;
+}
+#disipador-button { 
+    text-align: center;
+    align-content: center;
+
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 10;
+    grid-column-end: 16;
+ }
+#puertos-button { 
+    text-align: center;
+    align-content: center;
+
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 11;
+    grid-column-start: 2;
+    grid-column-end: 3;
+ }
+#chipset-button {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+
+    display: grid;
+    grid-row-start: 12;
+    grid-row-end: 16;
+    grid-column-start: 18;
+    grid-column-end: 23;
+
+}
+#conectores-button { 
+    text-align: center;
+    align-content: center;
+
+    display: grid;
+    grid-row-start: 6;
+    grid-row-end: 10;
+    grid-column-start: 23;
+    grid-column-end: 23;
+}
+#bios-button { 
+    text-align: center;
+    align-content: center;
+
+    display: grid;
+    grid-row-start: 16;
+    grid-row-end: 18;
+    grid-column-start: 23;
+    grid-column-end: 23;
+}
+#transistores-button { 
+    text-align: center;
+    align-content: center;
+
+    display: grid;
+    grid-row-start: 11;
+    grid-row-end: 19;
+    grid-column-start: 2;
+    grid-column-end: 3;
+ }
+#condensadores-button { 
+    text-align: center;
+    align-content: center;
+
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
