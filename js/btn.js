@@ -16,11 +16,20 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    document.getElementById('download-btn').addEventListener('click', function () {
-        const componentImage = document.getElementById('component-image');
-        const link = document.createElement('a');
-        link.href = componentImage.src;
-        link.download = 'componente.png';
-        link.click();
+    // Funcionalidad del botón de descarga para cada componente
+    const downloadButtons = document.querySelectorAll('.download-btn');
+    downloadButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const component = button.getAttribute('data-component');
+            const componentInfo = document.getElementById(`${component}-info`);
+
+            // Captura la sección de información del componente y la descarga como imagen PNG
+            html2canvas(componentInfo).then(canvas => {
+                const link = document.createElement('a');
+                link.href = canvas.toDataURL('image/png');
+                link.download = `${component}-info.png`;
+                link.click();
+            });
+        });
     });
 });

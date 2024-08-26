@@ -57,6 +57,8 @@ nav ul li a {
     grid-row-end: 20;
 }
 
+
+
 #filter-menu {
     background-color: #f4f4f4;
     padding: 20px;
@@ -105,7 +107,7 @@ nav ul li a {
 
 .grid-container button{
     background-color: #33333301;
-    color: rgba(240, 248, 255, 0);
+    color: rgba(19, 131, 229, 0.973);
     border: none;
 }
 
