@@ -20,99 +20,130 @@
         </nav>
         <a href="https://github.com/DAVID0205J/placa-Madre" target="_blank" class="github-btn">GitHub</a>
     </header>
-    
+
     <main class="grid-container">
         <div class="grid_img">
             <section id="component-view">
                 <div class="grid">
                     <img src="placa.webp" id="component-image">
                     
-                    <button class="grid-button" data-component="cpu" id="cpu-button">CPU</button>
-                    <button class="grid-button" data-component="ram" id="ram-button">RAM</button>
-                    <button class="grid-button" data-component="disipador" id="disipador-button">Disipador</button>
-                    <button class="grid-button" data-component="puertos" id="puertos-button">Puertos</button>
-                    <button class="grid-button" data-component="chipset" id="chipset-button">Chipset</button>
-                    <button class="grid-button" data-component="conectores" id="conectores-button">Conectores</button>
-                    <button class="grid-button" data-component="bios" id="bios-button">BIOS</button>
-                    <button class="grid-button" data-component="transistores" id="transistores-button">Transistores</button>
-                    <button class="grid-button" data-component="condensadores" id="condensadores-button">Condensadores</button>
+                    <!-- Botones de componentes -->
+                    <button class="grid-button" data-component="cpu" id="cpu-button">CPU
+                        <div class="tooltip">CPU</div>
+                    </button>
+                    <button class="grid-button" data-component="ram" id="ram-button">RAM
+                        <div class="tooltip">RAM</div>
+                    </button>
+                    <button class="grid-button" data-component="disipador" id="disipador-button">Disipador
+                        <div class="tooltip">Disipador</div>
+                    </button>
+                    <button class="grid-button" data-component="puertos" id="puertos-button">Puertos
+                        <div class="tooltip">Puertos</div>
+                    </button>
+                    <button class="grid-button" data-component="chipset" id="chipset-button">Chipset
+                        <div class="tooltip">Chipset</div>
+                    </button>
+                    <button class="grid-button" data-component="conectores" id="conectores-button">Conectores
+                        <div class="tooltip">Conectores</div>
+                    </button>
+                    <button class="grid-button" data-component="bios" id="bios-button">BIOS
+                        <div class="tooltip">BIOS</div>
+                    </button>
+                    <button class="grid-button" data-component="transistores" id="transistores-button">Transistores
+                        <div class="tooltip">Transistores</div>
+                    </button>
+                    <button class="grid-button" data-component="condensadores" id="condensadores-button">Condensadores
+                        <div class="tooltip">Condensadores</div>
+                    </button>
                 </div>
             </section>
         </div>
         <div id="component-info">
-            <div id="gpu-info" class="component-info hidden">
-                <h2>Información sobre GPU</h2>
-                <p>La GPU (Unidad de Procesamiento Gráfico) es crucial para la renderización de gráficos en computadoras y videojuegos.</p>
-            </div>
+            <!-- Botón de filtro -->
+            <button id="show-tooltips-btn">Mostrar Tooltips</button>
+            
+            <!-- Lista de categorías -->
+            <section class="filters">
+                <h2>Categorías</h2>
+                <label><input type="checkbox" class="filter-checkbox" data-category="cpu"> CPU</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="ram"> RAM</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="disipador"> Disipador</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="puertos"> Puertos</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="chipset"> Chipset</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="conectores"> Conectores</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="bios"> BIOS</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="transistores"> Transistores</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="condensadores"> Condensadores</label>
+            </section>
+            
+            <!-- Información de cada componente -->
             <div id="cpu-info" class="component-info hidden">
                 <h2>Información sobre CPU</h2>
-                <p>La CPU (Unidad Central de Procesamiento) es el cerebro de la computadora, encargado de ejecutar instrucciones y procesar datos.</p>
+                <p>La CPU (Unidad Central de Procesamiento) es el cerebro de la computadora, encargado de ejecutar instrucciones y procesar datos. Es crucial para el rendimiento general del sistema. Las CPUs modernas tienen múltiples núcleos para manejar tareas simultáneas y mejorar la eficiencia. Se mide en GHz, indicando la velocidad de procesamiento. La elección de la CPU afecta directamente la capacidad de realizar tareas complejas y ejecutar aplicaciones demandantes.</p>
                 <button class="download-btn" data-component="cpu">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                 </button>
             </div>
             <div id="ram-info" class="component-info hidden">
                 <h2>Información sobre RAM</h2>
-                <p>La RAM (Memoria de Acceso Aleatorio) es la memoria principal que almacena datos y programas que están en uso.</p>
+                <p>La RAM (Memoria de Acceso Aleatorio) es la memoria principal que almacena datos y programas que están en uso. Una mayor cantidad de RAM permite manejar más aplicaciones simultáneamente. La RAM es volátil, lo que significa que pierde su contenido cuando la computadora se apaga. Se mide en GB, y la velocidad se expresa en MHz. La RAM rápida puede mejorar el rendimiento general del sistema.</p>
                 <button class="download-btn" data-component="ram">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                 </button>
             </div>
             <div id="disipador-info" class="component-info hidden">
                 <h2>Información sobre Disipador</h2>
-                <p>El disipador se encarga de enfriar los componentes para evitar el sobrecalentamiento y asegurar su buen funcionamiento.</p>
+                <p>El disipador se encarga de enfriar los componentes para evitar el sobrecalentamiento y asegurar su buen funcionamiento. Los disipadores suelen estar hechos de materiales con buena conductividad térmica como el aluminio o el cobre. Se colocan en contacto directo con el componente que se desea enfriar. Un buen disipador puede prolongar la vida útil del hardware y mantener un rendimiento óptimo. Los disipadores pueden ser activos (con ventiladores) o pasivos (sin ventiladores).</p>
                 <button class="download-btn" data-component="disipador">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                 </button>
             </div>
             <div id="puertos-info" class="component-info hidden">
                 <h2>Información sobre Puertos</h2>
-                <p>Los puertos en una placa madre permiten conectar periféricos y otros dispositivos a la computadora.</p>
+                <p>Los puertos en una placa madre permiten conectar periféricos y otros dispositivos a la computadora. Hay varios tipos de puertos, incluyendo USB, HDMI, y Ethernet. Cada tipo de puerto tiene su propio propósito y velocidad de transferencia de datos. Los puertos se encuentran en la parte trasera y a veces en la parte frontal de la caja de la computadora. La disposición y cantidad de puertos pueden variar según el modelo de la placa madre.</p>
                 <button class="download-btn" data-component="puertos">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                 </button>
             </div>
             <div id="chipset-info" class="component-info hidden">
                 <h2>Información sobre Chipset</h2>
-                <p>El chipset controla la comunicación entre el procesador, la memoria y otros periféricos de la placa madre.</p>
+                <p>El chipset es un conjunto de circuitos integrados en la placa madre que coordina la comunicación entre el procesador, la memoria y otros periféricos. El chipset define las capacidades y el rendimiento de la placa madre, incluyendo la compatibilidad con diferentes tipos de hardware. Los chipsets pueden estar divididos en dos partes: el puente norte y el puente sur, cada uno manejando diferentes aspectos de la comunicación y la gestión de datos.</p>
                 <button class="download-btn" data-component="chipset">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                 </button>
             </div>
             <div id="conectores-info" class="component-info hidden">
                 <h2>Información sobre Conectores</h2>
-                <p>Los conectores son puntos de enlace para cables y dispositivos en la placa madre.</p>
+                <p>Los conectores en una placa madre permiten la conexión de cables y otros dispositivos a los diversos componentes internos y externos. Esto incluye conectores para la alimentación de la placa madre, unidades de almacenamiento, ventiladores y más. Los conectores deben ser compatibles con los cables y dispositivos que se están conectando para garantizar un funcionamiento correcto y seguro del sistema.</p>
                 <button class="download-btn" data-component="conectores">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                 </button>
             </div>
             <div id="bios-info" class="component-info hidden">
                 <h2>Información sobre BIOS</h2>
-                <p>El BIOS es el sistema básico de entrada y salida que inicia la computadora y gestiona el hardware.</p>
+                <p>El BIOS (Sistema Básico de Entrada/Salida) es un firmware almacenado en la placa madre que inicializa y prueba el hardware durante el arranque del sistema. También proporciona una interfaz para la configuración de hardware y la carga del sistema operativo. Las versiones modernas de BIOS a menudo se conocen como UEFI y ofrecen más funcionalidades y una interfaz gráfica de usuario mejorada.</p>
                 <button class="download-btn" data-component="bios">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                 </button>
             </div>
             <div id="transistores-info" class="component-info hidden">
                 <h2>Información sobre Transistores</h2>
-                <p>Los transistores actúan como interruptores o amplificadores en la placa madre, permitiendo el control de la electricidad.</p>
+                <p>Los transistores son componentes electrónicos fundamentales que actúan como interruptores o amplificadores en circuitos. En una placa madre, los transistores controlan el flujo de corriente a través de los distintos componentes, permitiendo el funcionamiento de la computadora. Su diseño y calidad afectan la estabilidad y el rendimiento del sistema.</p>
                 <button class="download-btn" data-component="transistores">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                 </button>
             </div>
             <div id="condensadores-info" class="component-info hidden">
                 <h2>Información sobre Condensadores</h2>
-                <p>Los condensadores almacenan y liberan energía eléctrica, estabilizando el voltaje en la placa madre.</p>
+                <p>Los condensadores almacenan y liberan energía eléctrica en un circuito. En una placa madre, ayudan a estabilizar el voltaje y filtrar las señales. Los condensadores de alta calidad contribuyen a la estabilidad y durabilidad del sistema. Los defectos en los condensadores pueden causar fallos en el sistema o problemas de rendimiento.</p>
                 <button class="download-btn" data-component="condensadores">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                 </button>
             </div>
+        </div>
     </main>
-
-
 
     <script src="./js/btn.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-
 </body>
 </html>

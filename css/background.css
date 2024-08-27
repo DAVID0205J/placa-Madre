@@ -107,7 +107,7 @@ nav ul li a {
 
 .grid-container button{
     background-color: #33333301;
-    color: rgba(19, 131, 229, 0.973);
+    color: rgba(19, 131, 229, 0);
     border: none;
 }
 
@@ -203,4 +203,79 @@ nav ul li a {
     grid-row-end: 2;
     grid-column-start: 5;
     grid-column-end: 6;
+}
+/* Estilo para el tooltip */
+.grid-button {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 55%;
+    margin-left: -40px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.grid-button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Estilo para la visualización de la bandera de la categoría */
+.flag {
+    position: absolute;
+    display: none;
+    background-color: rgba(217, 22, 22, 0.7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.flag.show {
+    display: block;
+}
+
+/* Filtros */
+.filters {
+    margin: 20px;
+}
+.tooltip.flag.show {
+    display: block;
+}
+
+.filters {
+    margin-top: 20px;
+}
+
+.filters label {
+    display: block;
+    margin: 5px 0;
+}
+#show-tooltips-btn {
+    background-color: #4428a7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#show-tooltips-btn:hover {
+    background-color: #218838;
 }
